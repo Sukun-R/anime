@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>アニメ</title>
+    <style>
+        img {
+            position: absolute;
+            width: 720px;
+            height: 480px;
+            top: 0px;
+            left: 25%;
+        }
+        
+        #button {
+            position: relative;
+            left: 50%;
+            top: 80%;
+        }
+        
+        #reload {
+            position: relative;
+            left: 44.5%;
+            top: 87%;
+        }
+        
+        #i1 {
+            z-index: 10;
+        }
+        
+        #i2 {
+            z-index: 9;
+        }
+        
+        #i3 {
+            z-index: 8;
+        }
+        
+        #i4 {
+            z-index: 7;
+        }
+        
+        #i5 {
+            z-index: 6;
+        }
+        
+        #i6 {
+            z-index: 5;
+        }
+        
+        #i7 {
+            z-index: 4;
+        }
+        
+        #i8 {
+            z-index: 3;
+        }
+        
+        #i9 {
+            z-index: 2;
+        }
+        
+        #i10 {
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="i1" src="./images/1.png" />
+    <img id="i2" src="./images/2.png" />
+    <img id="i3" src="./images/3.png" />
+    <img id="i4" src="./images/4.png" />
+    <img id="i5" src="./images/5.png" />
+    <img id="i6" src="./images/6.png" />
+    <img id="i7" src="./images/7.png" />
+    <img id="i8" src="./images/8.png" />
+    <img id="i9" src="./images/9.png" />
+    <img id="i10" src="./images/10.png" />
+
+    <script>
+        function saisei() {
+            setTimeout(function() {
+                document.getElementById('i1').remove();
+            }, 400);
+            setTimeout(function() {
+                document.getElementById('i2').remove();
+            }, 800);
+            setTimeout(function() {
+                document.getElementById('i3').remove();
+            }, 1200);
+            setTimeout(function() {
+                document.getElementById('i4').remove();
+            }, 1600);
+            setTimeout(function() {
+                document.getElementById('i5').remove();
+            }, 2000);
+            setTimeout(function() {
+                document.getElementById('i6').remove();
+            }, 2400);
+            setTimeout(function() {
+                document.getElementById('i7').remove();
+            }, 2800);
+            setTimeout(function() {
+                document.getElementById('i8').remove();
+            }, 3200);
+            setTimeout(function() {
+                document.getElementById('i9').remove();
+            }, 3600);
+            setTimeout(function() {
+                document.getElementById('i10').remove();
+            }, 1000);
+        }
+    </script>
+    <button onclick="saisei();" id="button">再生</button>
+    <button onclick="document.location.reload()" id="reload">もう一度再生</button>
+</body>
+
+</html>
